@@ -1,0 +1,8 @@
+# environmnet variables
+.env
+venv
+env/
+
+# twikit cookies 
+cookies_stealth.json
+

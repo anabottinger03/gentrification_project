@@ -1,11 +1,36 @@
-# gentrification_project
+# AI for Understanding Gentrification
 AI for understanding the social, economic, and environmental factors that influence gentrification of a neighborhood.
 
-# Part 1: Gentrification Prediction Analysis 
+## Part 1: Gentrification Prediction Analysis 
+### About the Code 
 
-# Part 2: Sentiment Analysis 
-### How to run 
-1. navigate inside the sentiment_analysis directory from your terminal. 
+```
+final_proj_prediction_analysis/
+|
+├── data_processing/          # data processing notebook and zip file containing all prediction data
+├── fnn/                     # FNN training code
+├── figs/                    # figs used in paper
+├── random_forests/         # random forest training code
+```
+## Part 2: Sentiment Analysis 
+
+### Important Notes
+
+- **Pretrained Models**:  
+  Pretrained sentiment models are stored in `sentiment_model/models/`.
+
+- **Figures & Test Analysis**:  
+  All visualizations and evaluation results used in the paper are available in `analysis.ipynb`.
+
+- **Model Training Entry Point**:  
+  Training begins from `main.py`.
+
+  To train the model, run:
+  ```
+  python main.py <model_name> --learning_rate --strength --num_iterations --regularization
+  ```
+### Installing Dependencies 
+1. navigate inside the `final_proj_sentiment/` directory from your terminal. 
 
 2. install the environment: 
 ```
@@ -34,14 +59,4 @@ final_proj_sentiment/
 │
 ├── results/                    # Saved plots, logs, evaluation outputs
 │   └── ...                     # Graphs, figures, confusion matrices, etc.
-```
-
-
-#### Important 
-- pretrained models are contained within senitment_model/models. 
-- figures and test analysis for paper can be found in analysis.ipynb. 
-- model training entrypoint is from main.py. Model training can be run as follows: 
-```
-python main.py <model_name> --learning_rate --strength --num_iterations --regularization
-
 ```
